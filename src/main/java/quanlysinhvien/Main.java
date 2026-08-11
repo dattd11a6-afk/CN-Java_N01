@@ -31,7 +31,7 @@ public class Main {
         double diem;
         while (true) {
             System.out.print("Nhập " + tenLoaiDiem + " (0 - 10): ");
-            // Kiểm tra xem người dùng có nhập đúng định dạng số không
+            // Kiểm tra người dùng có nhập đúng định dạng số không
             if (scanner.hasNextDouble()) {
                 diem = scanner.nextDouble();
                 if (diem >= 0 && diem <= 10) {
