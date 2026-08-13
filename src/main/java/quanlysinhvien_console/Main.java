@@ -1,3 +1,4 @@
+package quanlysinhvien_console;
 import java.util.Scanner;
 
 public class Main {

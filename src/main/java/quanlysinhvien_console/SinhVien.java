@@ -1,3 +1,5 @@
+package quanlysinhvien_console;
+
 public class SinhVien {
     private String maSV;
     private String hoTen;
