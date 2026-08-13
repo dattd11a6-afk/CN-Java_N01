@@ -9,7 +9,6 @@ public class Bai6_LoginForm extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Background: 60%
         getContentPane().setBackground(new Color(244, 247, 249));
         setLayout(new BorderLayout());
 
@@ -34,7 +33,6 @@ public class Bai6_LoginForm extends JFrame {
         optionPanel.add(cbRole);
         formPanel.add(optionPanel);
 
-        // Nút bấm: 30% (Màu chủ đạo xanh)
         JButton btnLogin = new JButton("Đăng nhập");
         btnLogin.setBackground(new Color(0, 122, 255));
         btnLogin.setForeground(Color.WHITE);

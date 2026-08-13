@@ -55,13 +55,11 @@ public class Bai8_QuanLySinhVien extends JFrame {
         btnPanel.add(btnDelete);
         btnPanel.add(btnReset);
 
-        // Vùng chứa Form và Nút
         JPanel topContainer = new JPanel(new BorderLayout());
         topContainer.setOpaque(false);
         topContainer.add(formPanel, BorderLayout.CENTER);
         topContainer.add(btnPanel, BorderLayout.SOUTH);
 
-        // 3. Panel Bảng dữ liệu
         tableModel = new StudentTableModel();
         table = new JTable(tableModel);
         table.setRowHeight(32);
@@ -74,7 +72,6 @@ public class Bai8_QuanLySinhVien extends JFrame {
         add(topContainer, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
 
-        // Đổ dữ liệu từ Bảng lên Form khi click
         table.getSelectionModel().addListSelectionListener(e -> {
             int row = table.getSelectedRow();
             if (row >= 0) {
@@ -139,7 +136,7 @@ public class Bai8_QuanLySinhVien extends JFrame {
         // Xử lý Làm mới
         btnReset.addActionListener(e -> {
             txtMaSV.setText("");
-            txtMaSV.setEditable(true); // Mở khóa lại ô nhập Mã SV
+            txtMaSV.setEditable(true); // Mở lại ô nhập Mã SV
             txtHoTen.setText("");
             txtDiemTB.setText("");
             table.clearSelection();
