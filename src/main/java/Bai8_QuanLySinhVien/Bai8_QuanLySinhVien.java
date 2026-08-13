@@ -74,8 +74,6 @@ public class Bai8_QuanLySinhVien extends JFrame {
         add(topContainer, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
 
-        // --- Gán sự kiện (Listeners) ---
-
         // Đổ dữ liệu từ Bảng lên Form khi click
         table.getSelectionModel().addListSelectionListener(e -> {
             int row = table.getSelectedRow();
